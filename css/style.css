@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bio-hero {
+    width: 100%;
+    background-color: bisque;
+}
+
+footer {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+@media (width >= 768px) {
+    
+    .navigation-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .card {
+
+        height: 100px;
+        border: 1px solid black;
+        width: 30%;
+        flex-basis: 30%;
+    }
+}
+
+@media (width < 768px) {
+
+    .navigation-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+    }
+    
+    .card {
+        height: 25%;
+        width: 100%;
+        border: 1px solid black;
+    
+    }
+    
+}
+
+.card:hover{
+   box-shadow: 0 0 10px black;
+}
